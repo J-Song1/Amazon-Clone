@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Checkout from './components/Checkout'
 import Payment from './components/Payment'
+import Orders from './components/Orders'
 import {
   BrowserRouter as Router,
   Switch,
@@ -52,6 +53,10 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/orders">
+            <Header />
+            <Orders />
           </Route>
           <Route path="/login">
             <Login />
