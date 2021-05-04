@@ -27,7 +27,7 @@ function Payment() {
     // Generate stripe secret
     const getClientSecret = async () => {
       // Note that stripe expects total in currency subunits
-      const baseURL = 'http://localhost:5001/clone-2a09e/us-central1/api'
+      const baseURL = 'https://us-central1-clone-2a09e.cloudfunctions.net/api'
       const response = await axios({
         method: 'post',
         url: `${baseURL}/payments/create?total=${getBasketTotal(basket) * 100}`
